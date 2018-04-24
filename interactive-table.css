@@ -1,0 +1,247 @@
+
+/* Remove this CSS property when putting the code onto the live site*/
+.access {
+	display: none;
+}
+
+
+/* NOTE: By Qi Shu */
+/* Live site with code was permanently lost in the last week of my job due to the sandbox issue */
+/* This is why I have kept a local copy of the table */
+/* there are built-in CSS Styles in the live site which will modify the function bar on the top*/
+/* Put the code to live first instead of directly editting this local copy*/
+
+/*showHideButton which allows the user to show or hide the columns is now hiddent, as required by Eva's team*/
+
+/* ------------ CSS Styles for the function wrappers ---------------*/
+#showHideDiv{
+	display: flex;
+	margin-right: 15px;
+	height:28px;
+	padding-bottom: 2em;
+}
+
+#showHideDropdown{
+	display: none;
+	position: absolute;
+	top: 40px;
+	background-color: white;
+	width: 250px;
+	padding-bottom: 30px;
+	padding-left: 10px;
+	padding-top:10px;
+	border: 1px solid black;
+}
+
+#showHideDropdown label {
+	display: inline;
+	font-weight: normal;
+}
+
+#theTable_filter, #theTable_filter label, #theTable_filter button, #theTable_filter input{
+	float:left !important;
+}
+
+#rightWidgetWrapper{
+	float: right;
+	margin-top:0px;
+}
+
+#rightWidgetWrapper select{
+	margin-top: 0px;
+}
+
+#showHideDiv{
+	float:left;
+}
+
+#showHideButton{
+	display:none;
+}
+
+#tableSearchButton{
+	height:28px;
+}
+
+#tableSearchButton span{
+	margin-left: 5px;
+}
+
+#clearDiv{
+	display: flex;
+	height: 28px;
+	float: left;
+	margin-left: 20px;
+}
+
+#leftWidgetWrapper{
+	float: left;
+}
+
+.dataTables_wrapper .dataTables_filter, #leftWidgetWrapper input { /* prevent shifting down when window size gets smaller*/
+	margin-top: 0px;
+}
+
+
+/*------------- for the table -------------------*/
+#theTable_wrapper{
+	width: 90vw;
+	margin: 0 auto;
+}
+
+#theTable_wrapper input[type="checkbox"] {
+	margin-right: 8px;
+}
+
+#theTableDiv{
+	width:100%;
+	border:1px solid black;
+	overflow: hidden;
+}
+
+#theTable{
+	visibility:hidden;
+}
+
+
+#theTable input {
+	border-radius: 0px;
+}
+
+#theTable th, #theTable td{
+	border-right: 1px solid black;
+}
+
+
+#interactive-table button {
+	-webkit-appearance: none;
+	margin-left: 4px;
+	border: 1px solid black;
+	font-size: 14.4px;
+}
+
+#theTable th{
+	background-color: #62387e;
+	color:#FFFFFF;
+}
+
+#theTable tbody .even{
+	background-color: #ede1ed;
+}
+
+#theTable tbody .odd{
+	background-color: #ffffff;
+}
+
+#theTable thead select, #theTable thead input {
+	padding-right: 1.5em;
+	width: calc(100% - 2em);
+	min-width: 150px;
+}
+
+tfoot {
+	display: table-header-group;
+}
+
+
+#theTable_length{
+	float:left;
+}
+
+#theTable_length select{
+	padding-right: 1.5em;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+	border:1px solid #5b5454;
+}
+
+
+
+#theTable select option{
+	background-color: #ffffff;
+}
+
+
+#theTable_paginate a{
+	border:0!important;
+}
+#theTable_paginate .current{
+	border: 1px solid #979797 !important;
+}
+
+#tableDisplayDiv{
+	font-size:14px;
+	max-width: 80% !important;
+	margin: 0 auto;
+}
+
+
+
+.dataTables_wrapper .dataTables_filter input {
+	margin-left: 0;
+}
+
+
+@media screen and (max-width:959px){
+	#theTableDiv{
+		overflow:scroll;
+	}
+}
+
+@media screen and (max-width: 754px) {
+
+	#theTable{
+	width:100%;
+	display:block;
+	}
+	#rightWidgetWrapper{
+	float:left;
+	margin-top:10px;
+	}
+
+	#leftWidgetWrapper, #rightWidgetWrapper {
+	width: 100%;
+	}
+
+	#theTable_filter, #searchTable{
+	width: calc(100% - 100px);
+	}
+	#clearDiv, #theTable_length{
+	float:right;
+	}
+
+
+#showHideDropdown {
+	top:70px;
+	}
+}
+
+@media screen and (max-width:500px){
+	#theTable_wrapper{
+		width: 100%;
+	}
+
+	#searchTable {
+		width: calc(100% - 100px);
+	}
+
+	#clearDiv {
+		margin-left:0;
+		float: right;
+
+	}
+
+	#showHideDiv, #theTable_length {
+		float: left;
+		padding-bottom: 10px;
+	}
+
+	#rightWidgetWrapper{
+		display:none;
+	}
+	#leftWidgetWrapper{
+		margin-bottom:10px;
+	}
+
+}
